@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.testimonial-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "card-top-left card-top-right"
+        "card-middle card-middle"
+        "card-bottom card-bottom";
+    gap: 1rem;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-top-left {
+    grid-area: card-top-left;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.card-top-right {
+    grid-area: card-top-right;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.card-middle {
+    grid-area: card-middle;
+    background-color: #d0d0d0;
+    padding: 1rem;
+}
+
+.card-bottom {
+    grid-area: card-bottom;
+    background-color: #c0c0c0;
+    padding: 1rem;
+}
