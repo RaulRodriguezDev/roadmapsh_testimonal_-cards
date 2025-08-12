@@ -17,6 +17,7 @@ body {
 .testimonial-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     grid-template-areas: 
         "card-top-left card-top-right"
         "card-middle card-middle"
@@ -29,9 +30,7 @@ body {
 
 .card-top-left {
     grid-area: card-top-left;
-    background-color: #f0f0f0;
-    max-height: min-content;
-    overflow: hidden;
+    font-size: 0.7rem;
 }
 
 .card-top-left main {
@@ -52,26 +51,26 @@ body {
     left: 2rem;
     transform: translateY(-50%) rotate(45deg);
 }
-.card-top-left-footer {
+.card-top-footer {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
     align-items: flex-start;
 }
-.card-top-left-footer img{
-    width: 80px;
-    height: 80px;
+.card-top-footer img{
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.card-top-left-footer p{
+.card-top-footer p{
     font-weight: 600;
     font-size: 1.2rem;
     position: relative;
 }
 
-.card-top-left-footer p::after{
+.card-top-footer p::after{
     content: "Software Development Engineer";
     position: absolute;
     width: max-content;
@@ -81,9 +80,17 @@ body {
 }
 .card-top-right {
     grid-area: card-top-right;
-    background-color: #e0e0e0;
     padding: 1rem;
+    border: 2px solid #000000;
+    border-radius: 1rem;
+    max-height: min-content;
+    overflow: hidden;
 }
+
+.card-top-right main {
+    font-size: 0.7rem;
+}
+
 
 .card-middle {
     grid-area: card-middle;
