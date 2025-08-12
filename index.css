@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
@@ -25,9 +30,55 @@ body {
 .card-top-left {
     grid-area: card-top-left;
     background-color: #f0f0f0;
-    padding: 1rem;
+    max-height: min-content;
+    overflow: hidden;
 }
 
+.card-top-left main {
+    background-color: #000000;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.card-top-left main::after{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 1rem;
+    height: 1rem;
+    bottom: -1rem;
+    left: 2rem;
+    transform: translateY(-50%) rotate(45deg);
+}
+.card-top-left-footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: flex-start;
+}
+.card-top-left-footer img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-top-left-footer p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.card-top-left-footer p::after{
+    content: "Software Development Engineer";
+    position: absolute;
+    width: max-content;
+    font-size: 0.6rem;
+    bottom: -1rem;
+    left: 0;
+}
 .card-top-right {
     grid-area: card-top-right;
     background-color: #e0e0e0;
