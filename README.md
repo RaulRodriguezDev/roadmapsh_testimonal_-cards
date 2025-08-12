@@ -5,4 +5,7 @@ Solution for the "Testimonial Cards" challenge from roadmap.sh. This solution us
 
 As is just a simple HTML project you can simply use the Open Live Server extension for Visual Studio Code and that will help you to run a live server
 
-You can visit the project in this url https://raulrodriguezdev.github.io/roadmapsh_testimonal_-cards/
+# Project Page Url
+
+- You can visit the project in this url https://raulrodriguezdev.github.io/roadmapsh_testimonal_-cards/
+- You can also see the project details here https://roadmap.sh/projects/testimonial-cards
