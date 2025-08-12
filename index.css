@@ -94,10 +94,59 @@ body {
 
 .card-middle {
     grid-area: card-middle;
-    background-color: #d0d0d0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.card-middle-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-middle-header p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.card-middle-header p::after {
+    content: "Software Development Engineer";
+    position: absolute;
+    width: max-content;
+    color: rgba(255,255,255,0.5);
+    bottom: -1rem;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+.card-middle-header-stars {
+    display: flex;
+    align-items: center;
+}
+
+.card-middle-header-stars img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card-middle-main {
+    flex: 0.8;
+    background-color: #000000;
+    border-radius: 1rem;
     padding: 1rem;
 }
 
+.card-middle img {
+    border-radius: 1rem;
+}
+
+.card-middle-main > p {
+    font-size: 0.8rem;
+    margin-top: 2.2rem;
+}
 .card-bottom {
     grid-area: card-bottom;
     background-color: #c0c0c0;
