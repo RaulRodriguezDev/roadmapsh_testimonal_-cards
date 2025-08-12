@@ -2,6 +2,10 @@ name: Deploy to Github Pages
 on:
     push:
         branches: ["main"]
+        paths-ignore:
+            - '.github/**'
+            - 'README.md'
+            - '*.md'
     workflow_dispatch:
 permissions:
     contents: read
